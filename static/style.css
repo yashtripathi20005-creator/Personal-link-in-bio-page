@@ -1,0 +1,353 @@
+/* =========================
+   Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Page
+========================= */
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea 0%,
+            #764ba2 100%
+        );
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   Main container
+========================= */
+
+.page {
+    width: 100%;
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    padding: 50px 20px 30px;
+}
+
+
+/* =========================
+   Profile
+========================= */
+
+.profile {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.profile-image-wrapper {
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 18px;
+
+    padding: 4px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+.profile h1 {
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+
+.username {
+    font-size: 15px;
+
+    opacity: 0.8;
+
+    margin-bottom: 12px;
+}
+
+
+.bio {
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    opacity: 0.95;
+}
+
+
+/* =========================
+   Link cards
+========================= */
+
+.links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.link-card {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 62px;
+
+    padding: 15px 50px 15px 20px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #222222;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.link-card:hover {
+    transform: translateY(-3px);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+.link-card:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   Link icon
+========================= */
+
+.link-icon {
+    width: 34px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-right: 12px;
+
+    font-size: 22px;
+}
+
+
+/* =========================
+   Link title
+========================= */
+
+.link-title {
+    flex: 1;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   Arrow
+========================= */
+
+.link-arrow {
+    position: absolute;
+
+    right: 20px;
+
+    font-size: 20px;
+
+    opacity: 0.6;
+
+    transition: transform 0.2s ease;
+}
+
+
+.link-card:hover .link-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   Social links
+========================= */
+
+.social-section {
+    margin-top: 35px;
+}
+
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.social-link {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.social-link:hover {
+    transform: translateY(-3px);
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 35px;
+
+    font-size: 13px;
+
+    opacity: 0.7;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+    .page {
+        padding:
+            35px 15px 25px;
+    }
+
+
+    .profile-image-wrapper {
+        width: 95px;
+        height: 95px;
+    }
+
+
+    .profile h1 {
+        font-size: 26px;
+    }
+
+
+    .bio {
+        font-size: 15px;
+    }
+
+
+    .link-card {
+        min-height: 58px;
+
+        padding:
+            13px 45px 13px 15px;
+    }
+
+
+    .link-title {
+        font-size: 15px;
+    }
+
+
+    .social-link {
+        width: 42px;
+        height: 42px;
+    }
+
+}
