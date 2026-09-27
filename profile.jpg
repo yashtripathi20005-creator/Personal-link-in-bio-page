@@ -1,0 +1,11 @@
+personal-link-bio/
+│
+├── app.py
+├── requirements.txt
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    ├── style.css
+    └── profile.jpg
